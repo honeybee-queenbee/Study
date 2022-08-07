@@ -1,0 +1,85 @@
+@charset 'utf-8';
+
+body {
+    height: 100%;
+}
+.main_title{
+    border-top: 3px solid lightgrey;
+    border-bottom: 3px solid lightgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.main_contents{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    height: 100%;
+}
+
+.local_nav{
+    font-size: 15px;
+    border-right: 3px solid lightgray;
+    height: 100%;
+}
+
+.local_contents {
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    text-align: center;
+    width: 300px;
+    height: 200px;
+}
+/* th,td {text-align:center;} */
+
+
+/* @charset 'utf-8';
+
+body{
+    hight:100%; /// html 높이를 100%으로 해줘야한다.
+}
+
+.main_title{
+    border-top: 3px solid lightgrey;
+    border-bottom: 3px solid lightgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main_contents{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    hight:100%; ///바디 높이도 100%으로 해야한다.
+}
+
+.local_nav{
+    font-size: 15px;
+    border-right: 3px solid lightgray;
+    hight:100%;  /// 이렇게 하면 줄이 길어진다.
+                    대신 부모인 .maim_conetens 높이도 100%으로 해야줘야한다.
+}
+
+.local_contents {
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+a {text-decoration: none;}
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    width: 300px;
+    height: 200px;
+}
+th,td {text-align:center;} */

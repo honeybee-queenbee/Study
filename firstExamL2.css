@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+html, body{
+    font-size: 13px;
+    height: 100%;
+}
+
+a {text-decoration: none;}
+
+/* @charset 'utf-8';
+
+html{
+    font-size: 16px;
+} 
+
+body{
+    hight:100%;
+}
+*/

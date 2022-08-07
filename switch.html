@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // swich문
+        // remain은 정수 or 문자열만 들어간다.
+        // 범위를 지정할 때는 사용하지 말아라.
+
+
+        // 첫번째 예시
+        const input = prompt('숫자를 입력해주세요.','');
+        const num = Number(input);
+
+        let message;
+
+        const remain =  num % 2;
+        switch(remain) 
+        {
+            case 0 :
+                message = "짝수입니다.";
+            break; 
+
+            case 1 :
+                message = "홀수입니다.";
+            break;
+
+            default : 
+                message = "숫자가 아닙니다.";
+            break;
+        }
+
+        alert(message);
+
+
+
+        // 두번째 예시
+        // const input = prompt('숫자를 입력해주세요.','');
+        // const num = Number(input);
+
+        // let message;
+
+        // switch(num % 2)
+        // {
+        //     case 0 :
+        //     case 1 :
+        //         message = "숫자가 맞습니다.";
+        //     break; 
+
+        //     default : 
+        //         message = "숫자가 아닙니다.";
+        //     break;
+        // }
+
+        // alert(message);
+
+      
+
+    </script>
+</body>
+</html>

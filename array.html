@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <script>
+        //console.log()는 외부에 노출되는 부분이 아니라
+        //검색창 콘솔부분에서 확인하려고 쓰는 것임 
+
+        // 1. 배열을 선언하기 (만들기)
+        const ar = [10, 20, 30, 40, 50];
+
+        console.log(ar[0]); 
+        console.log(ar[1]); 
+        console.log(ar[2]); 
+        console.log(ar[3]); 
+        console.log(ar[4]); 
+
+        // 2. 배열의 길이를 구한다.
+        console.log(ar.length); 
+
+        ar.push(60); 
+        //push는 배열 뒤에 넣는것, 콘솔화면에 [10, 20, 30, 40, 50, 60] 이렇게 나옴
+        //엄청 느리고 가능하면 사용을 피해라.
+        console.log(ar);
+
+        ar[6] = 70; 
+        console.log(ar);
+        //6번째에 70을 넣어라. 
+        //6번째는 없는 곳(할당이 되지 않은곳)이라 새로 추가가 된다.
+        //콘솔화면에 [10, 20, 30, 40, 50, 60, 70] 이렇게 나옴
+
+        ar[9] = 80; 
+        console.log(ar);
+        //가변적 처리 -> 가급적이면 피해라. 느려진다.
+        //콘솔화면에 [10, 20, 30, 40, 50, 60, 70, empty × 2, 80] 이렇게 나옴
+
+
+
+        // Splice 활용 예시
+        // var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+        // var removed = myFish.splice(2, 0, 'drum');
+
+        // 위와 같이 설정했을 때 콘솔화면은 아래와 같다.
+        // > myFish (콘솔화면에 myFish 쓰고 Enter)
+        // (5) ['angel', 'clown', 'drum', 'mandarin', 'sturgeon']
+    </script>
+
+</body>
+</html>

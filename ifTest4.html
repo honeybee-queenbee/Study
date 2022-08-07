@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //3번 문제 : 세개의 숫자를 입력받아 중간수를 찾는 코드
+        //입력
+        let input1 = prompt('첫번째 숫자를 입력해주세요.','');
+        let input2 = prompt('두번째 숫자를 입력해주세요.','');
+        let input3 = prompt('세번째 숫자를 입력해주세요.','');
+
+        const num1 = Number(input1);
+        const num2 = Number(input2);
+        const num3 = Number(input3);
+
+        let big = Math.max(num1, num2, num3);
+        let small = Math.min(num1, num2, num3);
+
+        //처리
+        let mid = (num1 + num2 + num3)-big - small;
+
+        //출력
+        console.log(input1, input2, input3);
+        alert("중간수는" +mid+ "입니다.");
+
+
+    </script>
+</body>
+</html>

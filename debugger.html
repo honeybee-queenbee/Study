@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const dummy =function()
+        {
+            console.log("1");
+            console.log("2");
+        }
+
+        const func =function()
+        {
+            let total = 0;
+
+            dummy();
+
+        for (let i=0; i < 10; i++)
+        {
+            total += i;
+            console.log(i);
+            console.log(total);
+        }
+
+
+        }
+
+        func();
+        
+        // const func = function()
+        // {
+        //     let a = [1, 2, 3, 4, 5];
+
+        //     let b = a;
+            
+        //     b.push(10);
+
+        //     console.log(a);   // [1, 2, 3, 4, 5, 10]
+        //     console.log(b);   // [1, 2, 3, 4, 5, 10]  위에랑 똑같은 Heap Area 의 배열에 대한 참조값이 같기 때문에
+        // }
+        
+        // func();
+
+        // const a = [1, 2, 3, 4, 5];
+
+        // a[0] = 11;  // const 여도 배열은 바뀜 // 일반 문자였을 때는 const는 read only 이므로 에러 남(a = 10; 이러면 에러남)
+
+
+        // const dummy = function()
+        // {
+        //     console.log("1");
+        //     console.log("2");
+        // }
+
+        // const func = function()
+        // {
+        //     let total = 0;
+
+        //     dummy();
+
+
+        //     for( let i = 0; i < 10; i++)
+        //     {
+        //         total += i;
+        //         console.log(i);
+        //         console.log(total);
+        //     }
+        // }
+
+
+        // func();
+        
+    </script>
+</body>
+</html>

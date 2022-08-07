@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 별찍기
+    let stars = '';
+    let starCount = 1;
+
+    for (let line = 0; line < 10; line++)
+    {
+        // 별의 개수를 설정한다.
+        for (let k = 0; k < starCount; k++)
+        {
+            stars += '*';
+            // 위에는 stars = stars + '*'; 와 같은것임
+            // 간추려서 자주 사용함
+        }          
+
+        //별을 로그에 찍겠다.
+         console.log(stars);
+
+        //별을 HTML 문서에 찍는다.
+       
+        document.body.innerHTML += stars;
+        //document.body.innerHTML =  document.body.innerHTML + stars;
+        //문서의 바디 부분에 있는 부분에 기존에 있는거 + stars;
+        document.body.innerHTML += '<br>';
+        //document.body.innerHTML =  document.body.innerHTML + '<br>';
+        
+
+        starCount++; //스타카운트를 증가시켜준다.
+        stars = ''; //스타는 초기화 
+    }
+
+
+    // let stars = '';
+    // let starCount = 1;
+
+    // for (let line = 0; line < 10; line++)
+    // {
+    //     for (let k = 0; k < starCount; k++) // 별의 개수를 설정한다.
+    //     {
+    //         stars += '*';
+    //     }                  
+    //     console.log(stars); //별을 로그에 찍겠다.
+       
+    //     document.body.innerHTML += stars; //별을 HTML 문서에 찍는다.
+    //     document.body.innerHTML += '<br>';
+        
+    //     starCount++; //스타카운트를 증가시켜준다.
+    //     stars = ''; //스타는 초기화 
+    // }
+    </script>
+
+</body>
+</html>

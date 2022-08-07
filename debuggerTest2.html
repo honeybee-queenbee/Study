@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        const getYearSymbol = function(birth)
+        {
+            let getYearSymbol = '';
+            const val = birth % 12;
+
+            switch(val)
+            {
+                case 0 : yearSymbol = '원숭이' ; break;
+                case 1 : yearSymbol = '닭' ; break;
+                case 2 : yearSymbol = '개' ; break;
+                case 3 : yearSymbol = '돼지' ; break;
+                case 4 : yearSymbol = '쥐' ; break;
+                case 5 : yearSymbol = '소' ; break;
+                case 6 : yearSymbol = '호랑이' ; break;
+                case 7 : yearSymbol = '토끼' ; break;
+                case 8 : yearSymbol = '용' ; break;
+                case 9 : yearSymbol = '뱀' ; break;
+                case 10 : yearSymbol = '말' ; break;
+                case 11 : yearSymbol = '양' ; break;
+
+                default : yearSymbol = '알수없음' ; break; // else와는 달라! 전혀 내가 생각할 수 없는 상황!
+            }
+
+            return yearSymbol;
+            
+        }
+
+        const input = prompt('출생년도를 입력하세요', '1997');
+        const birth = Number(input);
+
+        const sym = getYearSymbol(birth);
+
+        alert(`귀하의 띠는 ${sym}띠 입니다`);
+    </script>
+</body>
+</html>

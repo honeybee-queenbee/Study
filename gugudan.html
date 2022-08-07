@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 구구단 2단
+    const gugudan = function(dan)
+    {
+        let mul=1;
+        for (let i = 0; i < 9; i++)
+        {
+            console.log(`${dan} X ${mul} = ${dan*mul}`);
+            mul++;
+        }
+    }
+    gugudan(2);
+
+    //2단~9단까지
+    let dan =2;
+    let multiple = 1; // 곱해주는거
+    //처리
+    for (let i = 0; i < 8; i++) // 8번 돌아라 
+    {
+        for (let k = 0; k < 9; k++)  // 9번 돌아라
+        {
+        console.log(dan + 'x'+ multiple + '=' + dan*multiple);
+        multiple++;
+        }
+            
+        dan= dan + 1;
+        multiple = 1;
+    }       
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for (let i = 0; i <9; i++)
+        // {
+        //     console.log(i);
+        // }
+
+        // 의미해석 
+        // i는 0이다. i가 9보다 작으면 ture이기에 consloe.log(i)실행
+        // 0이 console.log(i)실행했으니, 그 다음 i++(증가) =>> i가 0에서 1이됨
+        // 다시 i=1로 9보다 작으니 true로 다시 실행 > 증가 > i가 2가 됨
+        // 그렇게 8까지 진행. (0~8까지 9번)
+        //그 이후 9는 작은게 아니고 같기때문에 flase로 실행하지 않는다.
+
+
+        // 잘못된 예시
+
+        // 예시1과 예시2는 2단 만들기(아주 잘못된 대표적인 예시임)
+
+        // 잘못된 예시 1
+        // for (let i = 0; i < 9; i++)
+        // {
+        //  console.log('2x'+ (i+1) +'='+2*(i+1));
+        // }
+
+        // 잘못된 예시 2
+        // for (let i = 0; i < 9; i++)
+        // {
+        //  console.log('2'+ '*' + (i+1) +'='+2*(i+1));
+        // }
+
+        //잘못된 예시3
+        //let n = '김한비' 
+        //alert("이름 : "+ name);
+
+        //let n = '32'
+        //art n("나이 : "+ age);
+
+        //이렇게 사용할 경우에는 결과값은 잘보이지만, 
+        //변수명이 같을 뿐 추후 유추가 힘들고 유지보수도 어렵다.
+        //변수명을 확실히 정해줘야함
+        // let n = '김한비' >>> let name ='김한비'
+        // let n = '32' >>> let age = '32'
+
+
+        // //정답//
+        // let multiple = 1;
+        // let dan = 2; // 나중에 (2단, 3단, 4단,...)으로 자유롭게 받을 수 있게 설정
+
+        // //처리
+        // for (let i = 0; i < 9; i++)  //i는 루프카운트일뿐, 신경쓰지 말아라.
+        // {
+        //     //출력(처리와 출력을 같이 사용)
+        //  console.log(dan + 'x'+ multiple + '=' + dan*multiple);
+        //  multiple = multiple + 1;
+        // }
+         
+
+
+        //2단~9단까지
+        let dan =2;
+        let multiple = 1; // 곱해주는거
+        //처리
+        for (let i = 0; i < 8; i++) // 8번 돌아라 
+        {
+            for (let k = 0; k < 9; k++)  // 9번 돌아라
+            {
+            console.log(dan + 'x'+ multiple + '=' + dan*multiple);
+            multiple++;
+            }
+            
+            dan= dan + 1;
+            multiple = 1;
+        }
+
+
+
+        // 2단 나오게 하기 
+        // let dan=2;
+        // let num=1;
+        // for(let i=0; i<9; i++)
+        // {
+        //     console.log (dan+ "x" + num + "=" + dan*num);
+        //     num=num+1;
+        // }
+         
+        
+        // 2단
+        // let result = '';
+        // for (let i = 1; i <= 9; i++) 
+        // {
+        // result += '2' + 'x' + i + '=' + 2 * i + '\n';
+        // }
+        // console.log(result);
+    </script>
+</body>
+</html>

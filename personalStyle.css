@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+.main_title {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 2px;
+
+}
+
+.main_contents {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    height: 100%;
+}
+
+.local_nav {
+    border-right: 1px solid gray;
+    height: 100%;
+
+}
+
+.local_section {
+    padding: 10px;
+
+
+}
+
+table {
+    text-align: center;
+}

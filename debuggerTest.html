@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //입력창
+        let birth = prompt("당신이 태어난 연도를 입력하십시오","");
+        let years = Number(birth);
+
+        // case-break;사용해서 띠 만들기
+        const remain = years%12
+        let message;
+
+        switch(remain)
+        {
+            case 0 :
+                message = "귀하는 원숭이띠 입니다."
+            break;
+
+            case 1 :
+                message = "귀하는 닭띠입니다."
+            break;
+
+            case 2 :
+                message = "귀하는 개띠입니다."
+            break;
+
+            case 3 :
+                message = "귀하는 돼지띠입니다."
+            break;
+
+            case 4 :
+                message = "귀하는 쥐띠입니다."
+            break;
+
+            case 5 :
+                message = "귀하는 소입니다."
+            break;
+
+            case 6 :
+                message = "귀하는 호랑이띠입니다."
+            break;
+
+            case 7 :
+                message = "귀하는 토끼띠입니다."
+            break;
+
+            case 8 :
+                message = "귀하는 용띠입니다."
+            break;
+
+            case 9 :
+                message = "귀하는 뱀띠입니다."
+            break;
+
+            case 10 :
+                message = "귀하는 말띠입니다."
+            break
+
+            default :
+                message = "귀하는 양띠입니다"
+            break;
+        }
+
+        // 출력
+        alert(message);                                    
+
+    </script>
+    
+</body>
+</html>

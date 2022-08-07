@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보</title>
+    <!-- <style>
+        html{
+            font-size: 13px;
+        }
+
+        .main_title{
+            border-top: 3px solid lightgrey;
+            border-bottom: 3px solid lightgrey;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+        }
+        
+        .main_contents{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+
+        .local_nav{
+            font-size: 15px;
+            border-right: 3px solid lightgray;
+        }
+
+        .local_contents {
+            padding-top: 15px;
+            padding-left: 30px;
+        }
+   
+        a {text-decoration: none;}
+
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table{
+            width: 300px;
+            height: 200px;
+        }
+        th,td {text-align:center;}
+    </style> -->
+
+    <link rel="stylesheet" href="firstExamL1.css">
+    <link rel="stylesheet" href="firstExamL2.css"> 
+</head>
+<body>
+    <h1 class="main_title">학생정보</h1>
+
+    <div class="main_contents">
+
+        <nav class="local_nav">
+            <ul>
+                <li><a href="firstExam1.html" >개인정보</a></li>
+                <li><a href="firstExam2.html" >성적확인</a></li>
+            </ul>
+        </nav>
+        <section class="local_contents">
+            <form>
+                이름 <input type="text" name="st_name" placeholder="홍길동"readonly><br><br></label>
+                학번 <input type="text" name="st_id" placeholder="22336655" readonly><br><br>
+                학과 <input type="text" name="col" placeholder="컴퓨터공학과" readonly><br>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>
+
+    <!-- <title>개인정보</title> /// 이 부분을 놓쳤음(Document를 바꿔줘야했음)
+
+    <label>학과 <input type="text" value="컴퓨터공학과" readonly></label>
+    /// placeholder와 value는 다른 의미가 있다. 
+    보안상의 문제가 있어 사용하지 않는 것이 좋다. -->

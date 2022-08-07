@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 배열은 결국에 data가 몇개 있는지의 싸움
+
+    // 얻고자 하는 data에 따라 기준이 달라진다.
+    // 국어/영어/수학을 하나도 봤을 땐 6개
+    // 학기로 구분지어 볼 때는 3개
+    // 점수로 봤을 때는 18개
+
+    // 구분 국어 영어 수학
+    // 1학년 1학기 80 90 90
+    // 1학년 2학기 85 90 90 
+    // 2학년 1학기 88 95 92 
+    // 2학년 2학기 90 90 88
+    // 3학년 1학기 88 89 96 
+    // 3학년 2학기 90 89 96
+
+        const score =  [[80, 84, 80, 82, 92, 70],
+                        [90, 94, 90, 86, 80, 80],
+                        [74, 80, 88, 90, 80, 88]];
+        const hg1_1 = score[0];
+
+        // let avg1_1 = (hg1_1[0] + hg1_1[1] + hg1_1[2])/3;
+        // let avg1_1 = (score[0][0] + score[0][1] + score[0][2])/3;
+        let avg1_1 = (score[0][0] + score[0][1] + score[0][2]+ score[0][3]+ score[0][4]+ score[0][5])/score[0].length;
+        console.log("1학년 1학기 평균 = " + avg1_1);
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1번 문제 : 숫자를 입력받아 짝수인지 홀수인지 판단하는 코드
+        // 입력
+        // promt로 숫자를 하나 받는다.
+        const input = prompt('숫자를 입력해주세요.','');
+        const num = Number(input);
+        let message;
+
+        // console.log(typeof(input)); 
+        // 이렇게 넣어보면 결과값이 string으로 나온다.
+        // JS 장점이자 단점인 문제를 해결하려는 방식 때문에 결과값이 나오지만,
+        // 결과가 나온다고 잘된 것은 아니다. 생활코딩 수준이다. 사용하지 말자.
+       
+
+        // 처리(=if문)
+        // 짝수냐 아니냐로  판단
+        // 처리(if문)과 출력(alert)이 섞인 좋지 못한 구조다.
+        if( 0 === (num%2)) // 혹은 if(num%2 === 0)으로 표시 가능 
+        {
+            message = num + "은 짝수입니다."; // 한줄인 경우에는 {}중가로 생략가능
+        }
+        else
+        {
+            message = num + "은 홀수입니다.";
+        }
+
+        // 출력 
+        alert(message);
+        
+
+
+    </script>
+</body>
+</html>

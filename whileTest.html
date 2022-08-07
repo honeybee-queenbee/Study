@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let a = 0;
+        // while( a < 9) // 사용자가 몇바퀴를 돌릴지 모를 때 while을 사용한다.
+        // {
+        //     console.log(a);
+        //     a++;
+        // }    
+        // 이렇게 할 경우 0,1,2,3,...,9)까지 나온다.
+
+        // //while문과 for문은 비슷(아래의 for문은 위의 while문과 같다.) 
+        // //for문에서 확장된걸 알 수 있다.
+        // for (let i =0; i < 9; i++ )
+        // {
+        //     console.log(a);
+        // }
+
+        //배열
+        // const ar = [10, 20, 30, 40, 50];
+        // for (let i = 0; i < 5; i++)
+        // {
+        //     console.log(ar[i]);
+        // }
+
+        // 위의 for문과 같은 while문 표현
+        // let n = 0;
+        // while(n<5)
+        // {
+        //     console.log(ar[n]);
+        //     n++
+        // }
+
+        // const ar = [10, 20, 30, 99, 40, 50];
+        // for (let i = 0; i < 5; i++) 
+        // for는 배열의 처음부터 끝까지 콘솔로그로 찍는 코드다.
+        // 그런데 99를 추가로 넣으면 배열이 바뀌기 때문에 50이 나오지 않는다.
+        // 그러기에 아래와 같이 ar.length를 넣어주면 된다.
+        // const ar = [10, 20, 30, 99, 40, 50];
+        // for (let i = 0; i < ar.length; i++) 
+        // {
+        //     if (ar[i] === 99)
+        //     {
+        //         break;
+        //     }
+        //     else
+        //     {
+        //         console.log(ar[i]);
+        //     }
+        // }
+        // 값은 10,20,30이 나온다.
+
+        
+        // const ar = [10, 20, 30, 99, 40, 50];
+        // //배열의 첨부터 끝까지 콘솔로그로 찍는 코드
+        // for (let i = 0; i < ar.length; i++) 
+        // {
+        //     if (ar[i] === 99)
+        //     {
+        //         break; // 밖으로 나가서 계산
+
+        //         //continue; 를 사용하면 즉시 위로 올라간다. 
+        //         //i가 하나 올라가고 40,50,60이 나온다.
+        //     }
+        //     else
+        //     {
+        //         console.log(ar[i]);
+        //     }
+        // }
+
+        // console.log("aaa");
+
+        
+        // if 밖으로 console.log를 넣어줬을 경우 
+        // let dan = 2;
+        // let mul = 1;
+        // for (let i =0; i<9; i++)
+        // {
+        //     if(mul === 6)
+        //     {
+        //         mul++;
+        //         continue;
+        //     }
+
+        //     console.log(`${dan} x ${mul} = ${dan*mul}`);
+        //     mul++;
+        // }
+
+
+
+        // continue만 넣었을 경우
+        // let dan = 2;
+        // let mul = 1;
+        // for (let i =0; i<9; i++, mul++)
+        // {
+        //     if(mul === 6)
+        //     {
+        //         continue;
+        //     }
+
+        //     console.log(`${dan} x ${mul} = ${dan*mul}`);
+        // }
+
+        //while문과 continue이용해서 짝수만 출력
+
+        let i = 1;
+         while (i <=10) {
+        if (i % 2 === 1) {
+        i++;
+        continue;
+        }
+        console.log(i);
+        i++;
+        }
+  
+    </script>
+
+</body>
+</html>

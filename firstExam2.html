@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적확인</title>
+    <!-- <style>
+        html{
+            font-size: 13px;
+        }
+
+        .main_title{
+            border-top: 3px solid lightgrey;
+            border-bottom: 3px solid lightgrey;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+        }
+        
+        .main_contents{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+
+        .local_nav{
+            font-size: 15px;
+            border-right: 3px solid lightgray;
+        }
+
+        .local_contents {
+            padding-top: 15px;
+            padding-left: 30px;
+        }
+   
+        a {text-decoration: none;}
+
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table{
+            width: 400px;
+            height: 150px;
+        }
+        th,td {text-align:center;}
+    </style> -->
+    <link rel="stylesheet" href="firstExamL1.css">
+    <link rel="stylesheet" href="firstExamL2.css"> 
+</head>
+<body>
+    <h1 class="main_title">학생정보</h1>
+
+    <div class="main_contents">
+
+        <nav class="local_nav">
+            <ul>
+                <li><a href="firstExam1.html" >개인정보</a></li>
+                <li><a href="firstExam2.html" >성적확인</a></li>
+            </ul>
+        </nav>
+        <section class="local_contents">
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>과목</th>
+                        <th>성적</th>
+                        <th>학점</th>
+                    </tr>
+                 </head>
+                 <tbody>
+                    <tr>
+                        <td rowspan="2">전공필수</td>
+                        <td>전산학 개론</td>
+                        <td>3.5</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>정보구조론</td>
+                        <td>4.3</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">교양</td>
+                        <td>북한학</td>
+                        <td>2.8</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>한국 근현대사</td>
+                        <td>3.2</td>
+                        <td>B</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2">성적평균</th>
+                        <td>3.45</td>
+                        <td>B</td>
+                    </tr>
+                 </tfoot>
+            </table>
+        </section>
+    </div>
+
+</body>
+</html>
